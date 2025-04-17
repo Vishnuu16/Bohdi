@@ -4,8 +4,8 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const TopBar = () => {
   return (
-    <div className="hidden md:block top-0 w-full bg-gradient-to-r from-red-700 to-rose-500 text-white shadow-md">
-      <div className="max-w-6xl mx-auto px-4">
+    <div className="hidden md:block top-0 w-full bg-gradient-to-r  text-white shadow-md" style={{ backgroundColor: '#F49217' }}>
+      <div className="w-[95%] mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center py-2 gap-2 md:gap-0">
           {/* Left Side - Contact Info */}
           <div className="flex items-center space-x-4 md:space-x-6">
@@ -38,17 +38,7 @@ const TopBar = () => {
             </div>
           </div>
 
-          {/* Right Side - Promo Message */}
-          <div className="flex items-center bg-white/10 px-3 py-1 rounded-full">
-            <Truck className="w-4 h-4 mr-2" />
-            <span className="text-sm font-sans">
-              Free shipping on orders over <span className="font-bold">₹50</span> | 
-            </span>
-            <div className="ml-2 flex items-center bg-white text-rose-600 px-2 py-0.5 rounded-full">
-              <Tag className="w-3 h-3 mr-1" />
-              <span className="text-xs font-bold">SHOP50</span>
-            </div>
-          </div>
+         
           
           {/* Social Icons */}
           <div className="flex gap-4 justify-between items-center">
